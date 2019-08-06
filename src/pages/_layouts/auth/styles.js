@@ -3,6 +3,7 @@ import { darken } from 'polished';
 
 export const Wrapper = styled.div`
   height: 100%;
+  min-height: 100vh;
   background: linear-gradient(-90deg, #7159c1, #ab59c1);
   display: flex;
   justify-content: center;
@@ -33,6 +34,13 @@ export const Content = styled.div`
       }
     }
 
+    span {
+      color: #fb6f91;
+      align-self: flex-start;
+      margin: 0 0 10px;
+      font-weight: bold;
+    }
+
     button {
       margin: 5px 0 0;
       height: 44px;
@@ -47,13 +55,6 @@ export const Content = styled.div`
       &:hover {
         background: ${darken(0.03, '#3b9eff')};
       }
-    }
-
-    span {
-      color: #fb6f91;
-      align-self: flex-start;
-      margin: 0 0 10px;
-      font-weight: bold;
     }
 
     a {

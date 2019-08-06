@@ -18,6 +18,10 @@ export default createGlobalStyle`
     height: 100%;
   }
 
+  #root {
+    min-height: 100%;
+  }
+
   body {
     -webkit-font-smoothing: antialiased !important;
   }
