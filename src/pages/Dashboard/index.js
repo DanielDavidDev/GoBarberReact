@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { format, subDays, addDays, setHours, parseISO, isEqual, isBebore, setMinutes, setSeconds } from 'date-fns';
+import { format, subDays, addDays, setHours, parseISO, isEqual, isBefore, setMinutes, setSeconds } from 'date-fns';
 import pt from 'date-fns/locale/pt';
 import { utcToZonedTime } from 'date-fns-tz';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
@@ -38,8 +38,8 @@ export default function Dashboard() {
           ),
         };
 
-        setSchedule(data);
       });
+      setSchedule(data);
     }
     loadSchedule();
   }, [date]);
