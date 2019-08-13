@@ -15,7 +15,7 @@ export default function RouteWrapper({
   const { signed } = store.getState().auth;
 
   if (!signed && isPrivate) {
-    return <Redirect to="/dashboard" />;
+    return <Redirect to="/" />;
   }
 
   if (signed && !isPrivate) {
